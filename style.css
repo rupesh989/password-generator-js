@@ -6,11 +6,22 @@
 }
 body {
   max-width: 100vw;
-  max-height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right bottom, #ffa585, #45c5d8);
 }
 .container {
+  border: 0.5px solid #de1e1e;
+  padding: 28px 32px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  box-shadow: 8px 8px 4px #c12323 8px 8px 0px #db2020;
+}
+.container h1 {
+  font-size: 1.4rem;
+  margin-block: 8px;
 }
