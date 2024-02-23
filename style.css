@@ -12,16 +12,30 @@ body {
   align-items: center;
   background: linear-gradient(to right bottom, #ffa585, #45c5d8);
 }
-.container {
+body .container {
   border: 0.5px solid #de1e1e;
   padding: 28px 32px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   background: transparent;
-  box-shadow: 8px 8px 4px #c12323 8px 8px 0px #db2020;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 4px #c12323, 8px 8px 0px #db2020;
 }
 .container h1 {
   font-size: 1.4rem;
   margin-block: 8px;
+}
+.container .inputBox {
+  /* background-color: forestgreen; */
+}
+.passBox {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  width: 300px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-block: 10px;
 }
