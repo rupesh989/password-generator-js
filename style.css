@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right bottom, #ffa585, #45c5d8);
+  font-weight: 600;
 }
 body .container {
   border: 0.5px solid #de1e1e;
@@ -38,6 +39,20 @@ body .container {
   border-radius: 4px;
   font-size: 20px;
   margin-block: 10px;
+  text-overflow: ellipsis;
+}
+
+.inputBox {
+  position: relative;
+}
+.inputBox span {
+  position: absolute;
+  top: 16px;
+  right: 6px;
+  color: #000;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .row {

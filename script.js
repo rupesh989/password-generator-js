@@ -6,7 +6,7 @@ let uppercase = document.getElementById("uppercase");
 let number = document.getElementById("number");
 let symbols = document.getElementById("symbols");
 let genBtn = document.getElementById("genBtn");
-
+let copyIcon = document.getElementById("copyIcon");
 //show input slider value
 sliderValue.textContent = inputSlider.value;
 
@@ -29,6 +29,7 @@ function generatePassword() {
   let allChars = "";
 
   allChars += lowercase.checked ? lowerChar : "";
+
   allChars += uppercase.checked ? upperChar : "";
 
   allChars += number.checked ? allNumbers : "";
@@ -48,3 +49,16 @@ function generatePassword() {
 
   return genPassword;
 }
+
+copyIcon.addEventListener("click", () => {
+  if (passBox.value != "" || passBox.value.length >= 1) {
+    navigator.clipboard.writeText(passBox.value);
+    copyIcon.innerText = "check";
+    copyIcon.title = "password Copied ";
+
+    setTimeout(() => {
+      copyIcon.innerHTML = "content_copy";
+      copyIcon.title = "";
+    }, 5000);
+  }
+});
