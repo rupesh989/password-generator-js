@@ -55,3 +55,20 @@ body .container {
   width: 20px;
   height: 20px;
 }
+
+.genBtn {
+  border: none;
+  outline: none;
+  background-color: #2c619e;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 18px;
+  margin-block: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.genBtn:hover {
+  background-color: #0066ff;
+}
